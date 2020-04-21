@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="coord"
+            type="com.app.chartapplication.entity.Coord" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:contentPadding="12dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/coordX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@{`X: ` + coord.x}"
+                tools:text="1.0" />
+
+            <TextView
+                android:id="@+id/coordY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@{`Y: ` + coord.y}"
+                tools:text="2.0" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

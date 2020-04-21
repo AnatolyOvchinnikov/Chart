@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChartApplication</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="go">Поехали</string>
+    <string name="switch_graph">Переключить</string>
+    <string name="enter_value">Введите число точек</string>
+    <string name="cart_saved">График сохранен в галерею</string>
+</resources>
